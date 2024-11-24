@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Jacquarda+Bastarda+9&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(46, 46, 46);
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+.tabs-menu{
+  display: flex;
+  margin: 17px 25px;
+  align-items: center;
+  justify-content:space-between;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid white;
+}
+.tabs-head{
+  font-size: 35px;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.tab-view{
+  margin-left: 20%;
+}
+.tabs{
+  text-decoration: none;
+  margin-left: 80px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: all 0.2s linear;
+}
+.tabs:hover{
+  color: rgb(45, 244, 45);
+}
+.homepage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14%;
+}
+.homepage-wel{
+  font-size: 25px;
+  font-weight: 500;
+}
+.hompage-user{
+  font-size: 55px;
+  color: rgb(45, 244, 45);
+  font-weight: 700;
+  margin-left: 5px;
+}
+.homepage-to{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px 0 5px 0;
+}
+.homepage-spans{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.homepage-span-main{
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.homepage-span-main-full{
+  letter-spacing: 0.8px;
+  font-size: 27px;
+  color: rgb(45, 244, 45);
+  font-weight: 400;
+}
+.permission{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7%;
+}
+.permission-head{
+  font-size: 35px;
+  font-weight: 500;
+  color: rgb(45, 244, 45);
+  letter-spacing: 0.5px;
+  padding-bottom: 35px;
+}
+.permission-form{
+  padding-bottom: 15px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.permission-form-input{
+  height: 5vh;
+  width: 40%;
+  margin-right: 20px;
+  padding: 0 0 5px 10px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  border-bottom: 2px solid white;
+}
+.permission-form-button{
+  height: 6.5vh;
+  width: 12%;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: rgb(45, 244, 45);
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.permissions-table {
+  width: 50%;
+}
+.roles-table{
+  width: 65%;
+}
+th{
+  background-color: whitesmoke;
+  font-weight: 650;
+}
+.permissions-table th,
+.permissions-table td,
+.roles-table th,
+.roles-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.table-header {
+  text-transform: uppercase;
+}
+.table-header th {
+  color: black;
+}
+.edit-btn{
+  margin: 0 25px 0 0;
+  padding: 5px 10px;
+  font-size: 1.0rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  background-color: #007bff;
+  color: white;
+  width: 20%;
+  font-weight: 400;
+  height: 5.5vh;
+}
+.edit-btn:hover {
+  background-color: #06376b;
+}
+.del-btn{
+  padding: 5px 10px;
+  font-size: 1.0rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  background-color: red;
+  color: white;
+  width: 25%;
+  font-weight: 400;
+  height: 5.5vh;
+}
+.del-btn:hover{
+  background-color: rgb(106, 4, 4);
+}
+.edit-btn-role{
+  margin: 0 25px 0 0;
+  padding: 5px 10px;
+  font-size: 1.0rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  background-color: #007bff;
+  color: white;
+  width: 25%;
+  font-weight: 400;
+  height: 5.5vh;
+}
+.edit-btn-role:hover {
+  background-color: #06376b;
+}
+.del-btn-role{
+  padding: 5px 10px;
+  font-size: 1.0rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  background-color: red;
+  color: white;
+  width: 30%;
+  font-weight: 400;
+  height: 5.5vh;
+}
+.del-btn-role:hover{
+  background-color: rgb(106, 4, 4);
+}
+.per-input{
+  width: 10%;
+  height: 5vh;
+  border: none;
+  outline: none;
+  border-bottom: 2.5px solid whitesmoke;
+  text-align: center;
+  font-size: 17px;
+}
+.per-input-role{
+  width: 30%;
+  height: 5vh;
+  border: none;
+  outline: none;
+  border-bottom: 2.5px solid whitesmoke;
+  text-align: center;
+  font-size: 17px;
+}
+.roles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+.permissions-options{
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+.role-check{
+  margin-right: 2px;
+  cursor: pointer;
+}
+.role-input-check{
+  margin-right: 7px;
+}
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 25px;
+  width: 55%;
+}
+.filter-container label {
+  font-size: 17px;
+  font-weight: bold;
+  color: black; 
+  margin-right: 8px;
+  background-color: transparent;
+}
+.filter-container select {
+  padding: 8px 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff; 
+  color: black;
+  outline: none;
+  transition: border-color 0.3s;
+  border-radius: 10px;
+  text-align: center;
+}
+.filter-container select:focus {
+  border-color: #007bff; 
+}
+.filter-container select option {
+  font-size: 14px;
+  color: white;
+}
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+.form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; 
+}
+.form-fields input,
+.form-fields select {
+  flex: 1;
+  min-width: 150px; 
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.permissions-display {
+  font-size: 16px;
+  color: whitesmoke;
+  margin-top: 10px;
+}
+.submit-button {
+  align-self:center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+}
+.submit-button:hover {
+  background-color: #0056b3; 
+}
+.user-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 25px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.table-header {
+  background-color: #007bff; 
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+  text-align: center;
+}
+.table-header th {
+  padding: 10px;
+}
+.table-row:nth-child(even) {
+  background-color: #f8f9fa;
+}
+.table-row td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+.table-row:hover {
+  background-color: #f1f1f1; 
+}
+.edit-input,
+.edit-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.edit-input:focus,
+.edit-select:focus {
+  border-color: #007bff;
+}
+.save-button,
+.cancel-button,
+.edit-button,
+.delete-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.save-button {
+  background-color: #28a745;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.cancel-button {
+  background-color: #6c757d;
+  color: #fff;
+}
+.edit-button {
+  background-color: #ffc107;
+  color: #fff;
+}
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  margin-left: 10px;
+}
+.save-button:hover,
+.cancel-button:hover,
+.edit-button:hover,
+.delete-button:hover {
+  opacity: 0.9;
+}
+
+
+@media (width: 440px) {
+  .tabs-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid white;
+  }
+  .tabs-head{
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .tab-view{
+    display: flex;
+    flex-direction: row;
+    margin: 5% 17% 0 0;
+  }
+  .permission-head{
+    font-size: 35px;
+  }
+  .permission-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .permission-form-input{
+    width: 75%;
+    margin-bottom: 15px;
+  }
+  .permission-form-button{
+    width: 50%;
+    height: 7vh;
+  }
+  .permissions-table {
+    width: 90%;
+  }
+  .edit-btn{
+    margin: 0 15px 0 0;
+    padding: 5px 10px;
+    font-size: 1.0rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    background-color: #007bff;
+    color: white;
+    width: 35%;
+    font-weight: 400;
+    height: 5.5vh;
+  }
+  .del-btn{
+    padding: 5px 10px;
+    font-size: 1.0rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    background-color: red;
+    color: white;
+    width: 50%;
+    font-weight: 400;
+    height: 5vh;
+  }
+  .per-input{
+    width: 25%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    border-bottom: 2.5px solid whitesmoke;
+    text-align: center;
+    font-size: 15px;
+  }
+  .roles-table{
+    width: 95%;
+  }
+  .table-row{
+    height: 17vh;
+  }
+  .buttons-role{
+    display: flex;
+    flex-direction: column;
+  }
+  .edit-btn-role, .del-btn-role{
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+  .per-input-role{
+    width: 72%;
+  }
+  .user-form{
+    width: 90%;
+  } 
+  .user-table {
+    width: 95%;
+    background: none;
+    margin-bottom: 10px;
+  }
+  .user-table thead {
+    display: none; 
+  }
+  .user-table tr {
+    padding: 15px;
+    border: 2.5px solid whitesmoke;
+    border-radius: 20px;
+  }
+  .user-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    font-size: 14px;
+    color: #fff;
+    font-size: 15px;
+  }
+  .user-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+  .edit-button,
+  .delete-button {
+    width: 48%;
+    font-size: 14px;
+    padding: 8px;
+    margin: 5px 1%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+  }
+}
+
