@@ -1,4 +1,4 @@
-# Role-Based Access Control (RBAC) Admin Dashboard
+# Role-Based Access Control (RBAC) Admin 
 
 A React-based Admin Dashboard to manage users, roles, and permissions with a focus on Role-Based Access Control (RBAC) principles. The application stores data in `localStorage` and provides an intuitive interface for managing users, assigning roles, and updating permissions.
 
